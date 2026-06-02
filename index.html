@@ -476,7 +476,7 @@ async function submitBooking() {
 
     if (res.ok) {
       showToast('success', 'Booking Request Sent!',
-        'Thank you, ' + firstName + '. We'll be in touch within one working day to confirm your ' + apptType + '.');
+        'Thank you, ' + firstName + '. We\'ll be in touch within one working day to confirm your ' + apptType + '.');
       // Reset form
       ['firstName','lastName','email','phone','notes'].forEach(id => document.getElementById(id).value = '');
       document.getElementById('prefDate').value = '';
