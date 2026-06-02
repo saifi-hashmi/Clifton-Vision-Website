@@ -451,7 +451,7 @@ async function submitBooking() {
       await new Promise(r => setTimeout(r, 1400));
     } else {
       await emailjs.send(service_iljbqx6, template_nbjyjbf, {
-        to_email: info@cliftonvision.co.uk, patient_name: fields.firstName+' '+fields.lastName,
+        to_email: OPTICIAN_EMAIL, patient_name: fields.firstName+' '+fields.lastName,
         patient_email: fields.email, patient_phone: fields.phone,
         appt_type: fields.apptType, pref_date: fields.prefDate,
         pref_time: fields.prefTime, patient_type: fields.patientType,
